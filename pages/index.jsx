@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { FaArrowRight, FaTicketAlt, FaCalendar } from 'react-icons/fa'
+import { FaArrowRight, FaTicketAlt } from 'react-icons/fa'
 
 export default function Home() {
   return (
