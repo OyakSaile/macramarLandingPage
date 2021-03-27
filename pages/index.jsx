@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { FaArrowRight, FaTicketAlt } from 'react-icons/fa'
+import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
@@ -27,9 +29,9 @@ export default function Home() {
               <div className="header-text">
 
 
-                <h2 className="font-weight-bold tertiary-color">Aula de</h2>
-                <h1 className="primary-color font-weight-bold">Macramê</h1>
-                <h3 className="font-weight-bold tertiary-color">Dia 15 de Abril</h3>
+                <h2 className={`font-weight-bold ${styles.tertiaryColor}`}  >Aula de</h2>
+                <h1 className={`${styles.primaryColor} font-weight-bold`}>Macramê</h1>
+                <h3 className={`font-weight-bold ${styles.tertiaryColor}`}>Dia 15 de Abril</h3>
                 <p>Evento totalmente gratuito</p>
               </div>
             </div>
@@ -48,15 +50,15 @@ export default function Home() {
 
 
           <div className="row">
-            <h2 className="font-weight-bold tertiary-color text-center my-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet  Amet minim mollit non deserunt ullamco est sit aliqua dolor do ametAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
+            <h2 className={`font-weight-bold ${styles.tertiaryColor} text-center my-3`}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet  Amet minim mollit non deserunt ullamco est sit aliqua dolor do ametAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
           </div>
 
           <div className="row text-center">
-            <p className="primary-color font-weight-bold carrer-text">Construa sua carreira lançando especialistas no mercado on-line como um profissional de bastidores disputado e bem remunerado.</p>
+            <p className={`${styles.primaryColor} font-weight-bold ${styles.carrerText}`}>Construa sua carreira lançando especialistas no mercado on-line como um profissional de bastidores disputado e bem remunerado.</p>
           </div>
 
           <div className="row">
-            <form action="" className="form-style w-100">
+            <form action="" className={`${styles.formStyle} w-100`}>
 
 
               <input className="d-block my-3" name="name" type="text" placeholder="Insira o seu nome." />
@@ -66,7 +68,7 @@ export default function Home() {
               <input name="email" type="text" placeholder="Seu melhor e-mail." />
 
 
-              <button className="btn  primary-color-bg my-3" type="submit">Garantir minha vaga
+              <button className={`btn  ${styles.primaryColorBg} my-3`} type="submit">Garantir minha vaga
               <FaArrowRight />
               </button>
 
@@ -77,15 +79,15 @@ export default function Home() {
 
       </section>
 
-      <section className="container-fluid bg-grey container-courses">
+      <section className={`container-fluid ${styles.bgGrey} container-courses`}>
         <div className="container">
 
 
-          <div className="text-center texts-course pt-5  ">
-            <h2 className="light-color">Lorem Impsum</h2>
-            <h3 className="primary-color"><strong>100% Gratuito</strong></h3>
-            <h3 className="primary-color"><strong>100% Online</strong></h3>
-            <p className="light-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque, veniam perspiciatis tenetur temporibus eum voluptatibus animi ex aliquam nisi eius, sint delectus labore aspernatur explicabo unde reprehenderit non odio.
+          <div className={`text-center ${styles.textsCourse} pt-5  `}>
+            <h2 className={styles.lightColor}>Lorem Impsum</h2>
+            <h3 className={`${styles.primaryColor}`} > <strong>100% Gratuito</strong></h3>
+            <h3 className={`${styles.primaryColor}`} ><strong>100% Online</strong></h3>
+            <p className={styles.lightColor}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque, veniam perspiciatis tenetur temporibus eum voluptatibus animi ex aliquam nisi eius, sint delectus labore aspernatur explicabo unde reprehenderit non odio.
             Quidem atque ut cupiditate? Deserunt voluptates eius repellendus corrupti qui inventore fuga veritatis voluptatem tempora doloremque voluptatum maiores vitae totam veniam omnis, similique facilis excepturi alias cumque vero aliquam vel.
             Saepe, atque! Dolorum modi quasi, perferendis voluptatibus minus ipsam assumenda, .</p>
 
@@ -97,21 +99,21 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-xl-4 col-md-4">
-              <div className="card-event d-flex">
+              <div className={`${styles.cardEvent} d-flex`}>
                 <FaTicketAlt />
                 <h3>Evento Gratuito</h3>
               </div>
 
             </div>
             <div className="col-12 col-xl-4 col-md-4">
-              <div className="card-event d-flex">
+              <div className={`${styles.cardEvent} d-flex`}>
                 <FaTicketAlt />
                 <h3>Evento Gratuito</h3>
               </div>
 
             </div>
             <div className="col-12 col-xl-4 col-md-4">
-              <div className="card-event d-flex">
+              <div className={`${styles.cardEvent} d-flex`}>
                 <FaTicketAlt />
                 <h3>Evento Gratuito</h3>
               </div>
