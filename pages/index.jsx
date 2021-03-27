@@ -26,7 +26,7 @@ export default function Home() {
 
           <div className="row">
             <div className="col-12 col-md-6 col-xl-6">
-              <div className="header-text">
+              <div className={styles.headerText}>
 
 
                 <h2 className={`font-weight-bold ${styles.tertiaryColor}`}  >Aula de</h2>
@@ -50,7 +50,7 @@ export default function Home() {
 
 
           <div className="row">
-            <h2 className={`font-weight-bold ${styles.tertiaryColor} text-center my-3`}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet  Amet minim mollit non deserunt ullamco est sit aliqua dolor do ametAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
+            <h2 className={`font-weight-bold ${styles.tertiaryColor} ${styles.carrerText} text-center my-3`}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet  Amet minim mollit non deserunt ullamco est sit aliqua dolor do ametAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
           </div>
 
           <div className="row text-center">
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container-fluid">
+      {/* <div className="container-fluid">
         <div className="container">
           <div className="row">
             <div className="col-12 col-xl-4 col-md-4">
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
 
       <footer>

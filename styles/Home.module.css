@@ -22,26 +22,26 @@
 }
 
 
-.headertext h1{
+.headerText h1{
   font-size: max(4rem);
   line-height: 5rem;
 }
-.header-text h2 {
+.headerText h2 {
   font-size: max(3rem);
   line-height: 2rem;
 }
-.header-text h3 {
+.headerText h3 {
   font-size: max(3rem);
   line-height: 3rem;
 
 }
-.header-text p {
+.headerText p {
   font-size: 1.3rem;
   font-weight: medium;
 }
 
 .carrerText{
-  font-size: 2rem;
+  font-size: max(1.5rem);
 }
 .formStyle{
   display: flex;
