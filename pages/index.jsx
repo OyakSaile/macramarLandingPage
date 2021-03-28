@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { FaArrowRight, FaTicketAlt } from 'react-icons/fa'
 import styles from '../styles/Home.module.css'
-
+import Form from '../components/Form/Form'
 export default function Home() {
   return (
     <div className="site-content">
@@ -22,33 +21,10 @@ export default function Home() {
       </Head>
 
       <section>
-        <Image src="/images/banner.png" width={1920} height={1080} alt="Imagem da Fundadora do MacramêAteliê"></Image>
+        <Image src="/images/banner.png" width={1920} height={1000} alt="Imagem da Fundadora do MacramêAteliê"></Image>
 
       </section>
-      {/* <section className={`${styles.heroImage} container-fluid mt-5`}>
-        <div className="container">
 
-
-          <div className="row">
-            <div className="col-12 col-md-6 col-xl-6">
-              <div className={styles.headerText}>
-
-
-                <h2 className={`font-weight-bold ${styles.tertiaryColor}`}  >Aula de</h2>
-                <h1 className={`${styles.primaryColor} font-weight-bold`}>Macramê</h1>
-                <h3 className={`font-weight-bold ${styles.tertiaryColor}`}>Dia 15 de Abril</h3>
-                <p>Evento totalmente gratuito</p>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-xl-6">
-
-              <Image src="/images/heroImage.jpeg" width={500} height={500} alt="Imagem da Fundadora do MacramêAteliê"></Image>
-
-
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="container-fluid my-5">
         <div className="container">
@@ -63,22 +39,7 @@ export default function Home() {
           </div>
 
           <div className="row">
-            <form action="" className={`${styles.formStyle} w-100`}>
-
-
-              <input className="d-block my-3" name="name" type="text" placeholder="Insira o seu nome." />
-
-
-
-              <input name="email" type="text" placeholder="Seu melhor e-mail." />
-
-
-              <button className={`btn  ${styles.primaryColorBg} my-3`} type="submit">Garantir minha vaga
-              <FaArrowRight />
-              </button>
-
-
-            </form>
+            <Form />
           </div>
         </div>
 
@@ -122,22 +83,7 @@ export default function Home() {
           <h1 className={`${styles.primaryColor} font-weight-bold`}>Aprenda Macramê</h1>
           <h3 className={`font-weight-bold ${styles.tertiaryColor}`}>Como um profissional</h3>
           <h4 className={`font-weight-bold ${styles.tertiaryColor}`}>Dia 15 de Abril</h4>
-          <form action="" className={`${styles.formStyle} w-100`}>
-
-
-            <input className="d-block my-3" name="name" type="text" placeholder="Insira o seu nome." />
-
-
-
-            <input name="email" type="text" placeholder="Seu melhor e-mail." />
-
-
-            <button className={`btn  ${styles.primaryColorBg} my-3`} type="submit">Garantir minha vaga
-<FaArrowRight />
-            </button>
-
-
-          </form>
+          <Form />
 
 
 
