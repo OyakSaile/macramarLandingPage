@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { FaArrowRight, FaTicketAlt } from 'react-icons/fa'
 import styles from '../styles/Home.module.css'
 
-
 export default function Home() {
   return (
     <div className="site-content">
@@ -16,11 +15,17 @@ export default function Home() {
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
           crossorigin="anonymous"
         />
-
+        <meta name="description" content="Aprenda Macramê em apenas uma aula com o curso da MacramêAteliê." />
+        <meta name="keywords" content="macrame,aprenda macrame,aula gratis, " />
+        <meta name="robots" content="index, follow" />
 
       </Head>
 
-      <section className="container-fluid mt-5">
+      <section>
+        <Image src="/images/banner.png" width={1920} height={1080} alt="Imagem da Fundadora do MacramêAteliê"></Image>
+
+      </section>
+      {/* <section className={`${styles.heroImage} container-fluid mt-5`}>
         <div className="container">
 
 
@@ -37,13 +42,13 @@ export default function Home() {
             </div>
             <div className="col-12 col-md-6 col-xl-6">
 
-              <Image src="/images/headerimage.png" width={1000} height={700}></Image>
+              <Image src="/images/heroImage.jpeg" width={500} height={500} alt="Imagem da Fundadora do MacramêAteliê"></Image>
 
 
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="container-fluid my-5">
         <div className="container">
@@ -95,40 +100,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <div className="container-fluid">
-        <div className="container">
+      <section className={`container-fluid aboutMe`}>
+        <div className={`container`}>
           <div className="row">
-            <div className="col-12 col-xl-4 col-md-4">
-              <div className={`${styles.cardEvent} d-flex`}>
-                <FaTicketAlt />
-                <h3>Evento Gratuito</h3>
-              </div>
-
+            <hr />
+          </div>
+          <div className="row">
+            <div className="col-12 col-md-12 col-xl-12 text-center">
+              <h3 className={`${styles.primaryColor} font-weight-bold`}>Thamiris Nunes</h3>
+              <p>
+                Me chamo Thamiris e tenho 24 anos, sou artesã e fundadora da <a href="" className={`${styles.primaryColor}`}>@macramar.atelie.</a> Hoje me dedico 100% ao macramê, por isso digo que essa arte transformou a minha vida e a cada dia venho me apaixonando por essa profissão e estilo de vida. <br /> <br /> Fiz meu primeiro painel, fiquei tão orgulhosa e feliz que não queria parar mais, foi quando resolvi que essa seria minha vida, e atualmente essa é a minha profissão e toda minha fonte de renda, por isso eu resolvi dividir com você parte da minha história e experiência na busca pelo aprendizado do macramê. Conversaremos as soluções e dicas que aprendi na prática, com muito estudo, esforço e dedicação.
+              </p>
             </div>
-            <div className="col-12 col-xl-4 col-md-4">
-              <div className={`${styles.cardEvent} d-flex`}>
-                <FaTicketAlt />
-                <h3>Evento Gratuito</h3>
-              </div>
 
-            </div>
-            <div className="col-12 col-xl-4 col-md-4">
-              <div className={`${styles.cardEvent} d-flex`}>
-                <FaTicketAlt />
-                <h3>Evento Gratuito</h3>
-              </div>
+          </div>
+        </div>
+      </section>
 
-            </div>
+      <section className="container-fluid">
+        <div className="container">
+          <h1 className={`${styles.primaryColor} font-weight-bold`}>Aprenda Macramê</h1>
+          <h3 className={`font-weight-bold ${styles.tertiaryColor}`}>Como um profissional</h3>
+          <h4 className={`font-weight-bold ${styles.tertiaryColor}`}>Dia 15 de Abril</h4>
+          <form action="" className={`${styles.formStyle} w-100`}>
+
+
+            <input className="d-block my-3" name="name" type="text" placeholder="Insira o seu nome." />
+
+
+
+            <input name="email" type="text" placeholder="Seu melhor e-mail." />
+
+
+            <button className={`btn  ${styles.primaryColorBg} my-3`} type="submit">Garantir minha vaga
+<FaArrowRight />
+            </button>
+
+
+          </form>
+
+
+
+          <div className="input-block">
 
 
           </div>
-
         </div>
-      </div> */}
+      </section>
 
 
-      <footer>
-
+      <footer className="container">
+        <p className={`${styles.primaryColor} text-center`}>Copyright © 2021 Thamiris Nunes - Todos os direitos reservados  </p>
 
         <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
 

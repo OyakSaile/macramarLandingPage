@@ -21,6 +21,10 @@
   color:var(--bg-color);
 }
 
+.heroImage{
+  background-color: #cebfb6 ;
+}
+
 
 .headerText h1{
   font-size: max(4rem);
@@ -98,7 +102,28 @@
   font-size: 1.2rem;
 }
 
-.container-courses{
+.containerCourses{
  padding: 4rem;
+}
+.cardEvent{
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 1rem;
+}
+
+.svgContainer{
+  background-color: var(--grey-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+
+}
+
+.svgContainer svg{
+color: var(--bg-color);
+background-color: var(--grey-color);
+
 }
 
