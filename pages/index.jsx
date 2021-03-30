@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="site-content">
       <Head>
-        <title>Macramar</title>
+        <title>Thamiris Nundes - Aprenda Macramê como um profissional.</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -14,7 +14,7 @@ export default function Home() {
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
           crossorigin="anonymous"
         />
-        <meta name="description" content="Aprenda Macramê em apenas uma aula com o curso da MacramêAteliê." />
+        <meta name="description" content="Thamiris Nunes, Aprenda macramê como um profissional, aula totalmente grátis e 100% online." />
         <meta name="keywords" content="macrame,aprenda macrame,aula gratis, " />
         <meta name="robots" content="index, follow" />
 
