@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <section>
-        <Image priority={true} src="/images/banner.png" width={1920} height={1000} alt="Imagem da Fundadora do MacramêAteliê"></Image>
+        <Image priority={true} src="/images/banner.png" width={1920} height={1000} alt="Thamiris Nunes - Aprenda Macramê como um profissional."></Image>
 
       </section>
 
